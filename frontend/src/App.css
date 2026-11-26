@@ -1,0 +1,40 @@
+/* Centrar el contenedor principal */
+#center {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajustar el contenedor de las imágenes */
+.hero {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 170px;
+  height: 179px;
+}
+
+/* La imagen base (tu logo) */
+.hero .base {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* El logo de React mas pequeño para que no tape el logo base */
+.hero .framework {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  pointer-events: none;
+}
